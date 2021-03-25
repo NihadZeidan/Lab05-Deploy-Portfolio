@@ -876,7 +876,7 @@ button,
 }
 
 #main>section.one {
-    background-image: url("images/shapelined-K9QHL52rE2k-unsplash.jpg");
+    background-image: url("/public/assets/css/images/shapelined-K9QHL52rE2k-unsplash.jpg");
     height: fit-content;
 }
 
