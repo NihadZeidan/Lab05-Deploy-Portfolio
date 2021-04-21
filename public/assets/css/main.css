@@ -21,6 +21,20 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills p {
+    margin: 1em;
+    text-align: center;
+}
+
+.skills p:hover {
+    color: #e27689;
+}
+
 html,
 body,
 div,
@@ -193,7 +207,7 @@ body {
     font-size: 19pt;
     font-weight: 300;
     line-height: 1.75em;
-    color: #888;
+    color: rgb(255, 255, 255);
 }
 
 body.is-preload *,
@@ -226,7 +240,7 @@ h4,
 h5,
 h6 {
     font-weight: 300;
-    color: #666;
+    color: rgb(255, 255, 255);
     line-height: 1.5em;
 }
 
@@ -450,7 +464,10 @@ br.clear {
 }
 
 .row>.col-4 {
-    width: 33.3333333333%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
 }
 
 .row>.off-4 {
@@ -1586,6 +1603,7 @@ article:last-child {
 .image img {
     display: block;
     width: 100%;
+    height: 12em;
 }
 
 .image.avatar48 {
@@ -1787,7 +1805,7 @@ button,
     color: #fff !important;
     text-decoration: none;
     padding: 0.75em 2.5em 0.75em 2.5em;
-    background-color: #8ebebc;
+    background-color: #3a3a3a;
     border: 0;
     cursor: pointer;
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -1825,7 +1843,7 @@ button:active,
 }
 
 .item header {
-    background: #fff;
+    background-color: #2b2e2e;
     margin: 0;
     padding: 1em 0 1em 0;
     font-size: 0.8em;
@@ -1833,6 +1851,11 @@ button:active,
 
 .item header h3 {
     font-size: 1em;
+    color: white;
+}
+
+.item header h3:hover {
+    color: #b3b3b3;
 }
 
 
@@ -2006,8 +2029,8 @@ button:active,
 #footer {
     margin-left: 375px;
     text-align: center;
-    background-color: #dce3e2;
-    padding: 3em 0 4em 0;
+    background-color: #2b2e2e;
+    padding: .8em 0 1em 0;
     box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
     font-size: 0.8em;
 }
@@ -2041,10 +2064,10 @@ button:active,
 #main>section {
     margin: 0;
     overflow: hidden;
-    padding: 4em 0;
+    padding: .5em 0;
     box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
     text-align: center;
-    background-image: url("images/overlay.png");
+    background-image: url("/images/main.jpg");
 }
 
 #main>section.dark {
@@ -2082,19 +2105,19 @@ button:active,
 
 #main>section.one {
     background-color: #81918E;
-    background-image: url("../../images/banner.jpg");
+    background-image: url("/public/assets/css/images/headerImage.jpg");
 }
 
 #main>section.two {
-    background-color: #f5fafa;
+    background-color: #474949
 }
 
 #main>section.three {
-    background-color: #ecf1f1;
+    background-color: #2b2e2e
 }
 
 #main>section.four {
-    background-color: #e8edec;
+    background-color: #313434db;
 }
 
 
@@ -2128,7 +2151,7 @@ button:active,
 @media screen and (min-width: 961px) and (max-width: 1620px) {
     /* Main */
     #main>section {
-        padding: 3em 0;
+        padding: .5em 0;
     }
     #main section.cover {
         padding: 5em 0;
@@ -2349,7 +2372,7 @@ button:active,
         margin-left: 0;
     }
     #main>section {
-        padding: 3em 0;
+        padding: .5em 0;
     }
     #main section.cover {
         padding: 4em 0;
@@ -2382,7 +2405,7 @@ button:active,
     }
     /* Main */
     #main>section {
-        padding: 2em 0;
+        padding: .5em 0;
     }
     #main section.cover {
         padding: 4em 0em;
