@@ -12,9 +12,15 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static('./public'));
 
+
+
+
+
 app.get('/hello', (request, response) => {
     response.status(200).send('Hello');
 });
+
+
 
 
 
@@ -26,9 +32,6 @@ app.get('/data', (request, response) => {
     };
     response.status(200).json(airplanes);
 });
-
-
-
 
 
 app.use('*', (request, response) => response.send('Sorry, that route does not exist.'));
