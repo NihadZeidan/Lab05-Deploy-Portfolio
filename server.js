@@ -15,6 +15,11 @@ app.get('/hello', (request, response) => {
     response.status(200).send('Hello');
 });
 
+app.get('/', (request, response) => {
+    response.status(200).sendFile('/mnt/c/Users/Nihad/desktop/code301repos/Lab05-Deploy-Portfolio/index.html');
+});
+
+
 app.get('/data', (request, response) => {
     let airplanes = {
         departure: Date.now(),
